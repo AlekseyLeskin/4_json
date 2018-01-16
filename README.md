@@ -25,7 +25,7 @@ $ python pprint_json.py
 
  ```bash
  
-$ python3 pprint_json.py test.json
+$ python pprint_json.py test.json
 
 ```
 
