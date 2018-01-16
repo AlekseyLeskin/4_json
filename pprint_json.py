@@ -1,13 +1,19 @@
 import json
+import sys
 
 
 def load_data(filepath):
-    pass
+    with open(filepath, 'r', encoding='utf-8') as f:
+        return json.load(f)
 
 
 def pretty_print_json(data):
-    pass
+    print(json.dumps(data, sort_keys=True, indent=4, ensure_ascii=False))
 
 
 if __name__ == '__main__':
-    pass
+    if len(sys.argv) == 1:
+        data = load_data(input('Укажите путь до файла: '))
+    else:
+        data = load_data(sys.argv[1])
+    pretty_print_json(data)
