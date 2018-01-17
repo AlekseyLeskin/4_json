@@ -41,6 +41,16 @@ $ python pprint_json.py test.json
 
 ```
 
+При вводе несуществующего файла скрипт выдаст ошибку:
+
+```bash
+
+$ python3 pprint_json.py incorrect_file
+Файла не существует
+
+```
+и прекратит работу.
+
 # Project Goals
 
 The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
