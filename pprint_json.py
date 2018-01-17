@@ -13,7 +13,7 @@ def pretty_print_json(data):
 
 if __name__ == '__main__':
     if len(sys.argv) == 1:
-        data = load_data(input('Укажите путь до файла: '))
+        filepath = load_data(input('Укажите путь до файла: '))
     else:
-        data = load_data(sys.argv[1])
-    pretty_print_json(data)
+        filepath = load_data(sys.argv[1])
+    pretty_print_json(filepath)
